@@ -1,4 +1,2 @@
-i = 1
-while i < 101:
+for i in range(1, 101):
   print(i)
-  i = i + 1
