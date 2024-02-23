@@ -1,4 +1,4 @@
-# # 1st way
+# 1st way
 for i in range(2, 21, 2):
     print(i)
     
