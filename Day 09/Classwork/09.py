@@ -1,11 +1,17 @@
 password = "12345"
-guess = input("Enter the password: ")
+enter = input("Please enter a password")
+while enter != password:
+    enter = input("Please enter a password")
+print("true")
 
-while True:
-    if guess == password:
-        print("Password correct.")
-        break
-    else:
-         print("Incorrect password.")
-         guess = input("Enter the password: ")
-    
+
+# password = "12345"
+# guess = input("Enter the password: ")
+
+# while True:
+#     if guess == password:
+#         print("Password correct.")
+#         break
+#     else:
+#          print("Incorrect password.")
+#          guess = input("Enter the password: ")
