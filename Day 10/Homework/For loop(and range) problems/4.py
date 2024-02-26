@@ -4,7 +4,7 @@ n = int(input("Please enter a number: "))
 
 for i in range(1, n + 1):
     print(i)
-    sum = sum + i
+    sum = sum + i   
 average = sum / n
 print("The sum is: " + str(sum))
 print("The average is: " + str(average))  
