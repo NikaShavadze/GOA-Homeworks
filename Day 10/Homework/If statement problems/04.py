@@ -8,4 +8,4 @@ elif age >= 15 and age < 50:
 elif age < 15 and age > 0:
     print("You are a kid")
 else:
-    print("wrong number...")
+    print("Wrong number...")
