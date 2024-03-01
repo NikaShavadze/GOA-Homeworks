@@ -1,5 +1,7 @@
-#   Write a program that takes an input from the user and checks if it's a positive, 
-# negative, or zero number using if-else.
+"""
+    Write a program that takes an input from the user and checks if it's a positive, 
+negative, or zero number using if-else.
+"""
 
 n = int(input("Please enter a number: "))
 

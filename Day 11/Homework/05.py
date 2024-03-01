@@ -1,6 +1,8 @@
-#   Write a program that asks the user for their age and prints 
-# a message based on the age range (e.g., "Child", "Teenager", 
-# "Adult") using if-elif-else.
+""""
+    Write a program that asks the user for their age and prints 
+a message based on the age range (e.g., "Child", "Teenager", 
+"Adult") using if-elif-else.
+"""
 
 age = int(input("Please enter your age: "))
 

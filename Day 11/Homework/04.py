@@ -1,6 +1,8 @@
-#   Write a program that simulates a simple login system. Ask the user for
-# a username and password, and if they enter "admin" and "password123", respectively, 
-# print "Login successful" using if-else.
+"""
+    Write a program that simulates a simple login system. Ask the user for
+a username and password, and if they enter "admin" and "password123", respectively, 
+print "Login successful" using if-else.
+"""
 
 registered_login = "admin"
 registered_password = "password123"
