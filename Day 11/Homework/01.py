@@ -1,13 +1,10 @@
-"""
-    Write a program that takes an input from the user and checks if it's a positive, 
-negative, or zero number using if-else.
-"""
+# Write a program that calculates the sum of a number entered by the user using a while loop.
 
 n = int(input("Please enter a number: "))
+sum = 0
 
-if n > 0:
-    print(str(n), "is a positive number.")
-elif n < 0:
-    print(str(n), "is a positive number.")
-else:
-    print(str(n), "is neither positive or negative.")
+i = 1
+while i <= n:
+    sum = sum + i
+    i = i + 1
+print(sum)

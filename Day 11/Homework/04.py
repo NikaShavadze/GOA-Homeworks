@@ -1,19 +1,16 @@
-"""
-    Write a program that simulates a simple login system. Ask the user for
-a username and password, and if they enter "admin" and "password123", respectively, 
-print "Login successful" using if-else.
+""""
+    Write a program that asks the user for their age and prints 
+a message based on the age range (e.g., "Child", "Teenager", 
+"Adult") using if-elif-else.
 """
 
-registered_login = "admin"
-registered_password = "password123"
-user_login_input = input("Login: ")
-user_password_input = input("Passwprd: ")
+age = int(input("Please enter your age: "))
 
-while True:
-    if user_login_input == registered_login and user_password_input == registered_password:
-        print("Login successful.")
-        break
-    else:
-        print("Incorrect password.")
-        user_login_input = input("Login: ")
-        user_password_input = input("Passwprd: ")
+if age > 18:
+    print("Adult")
+elif age < 13 and age > 0:
+    print("Child")
+elif age < 1:
+    print("Wrong number...")
+else:
+    print("Teenage")

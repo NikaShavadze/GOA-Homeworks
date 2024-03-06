@@ -1,13 +1,12 @@
 """
-    Write a program that asks the user to enter a number and then prints whether the
-number is positive, negative, or zero using an if-else statement.
+    Write a program that asks the user to enter a password. 
+If the password is "abc123", print "Access granted"; otherwise, print "Access denied".
 """
 
-number = int(input("Please enter a nummber\n"))
+user_input = input("Please enter a password\n")
+user_password = "abc123"
 
-if number > 0:
-    print("Your number is positive.")
-elif number < 0:
-    print("Yours number is negative.")
+if user_input == user_password:
+    print("Access granted/")
 else:
-    print("Yours number is 0.")
+    print("Access denied.")

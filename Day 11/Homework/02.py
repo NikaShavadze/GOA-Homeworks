@@ -1,10 +1,18 @@
-# Write a program that calculates the sum of a number entered by the user using a while loop.
+"""
+    Write a program that simulates a basic ATM. It should ask the user for their PIN, 
+and if it's correct, display a text withdrawal, deposit, and balance.
+"""
 
-n = int(input("Please enter a number: "))
-sum = 0
+registered_password = "1234"
+user_input = input("Please enter your PIN: ")
 
-i = 1
-while i <= n:
-    sum = sum + i
-    i = i + 1
-print(sum)
+while True:
+    if user_input == registered_password:
+        print("Withdrawal")
+        print("Deposit")
+        print("Balance")
+        break
+    else:
+        print("Password incorrect.")
+        user_input = input("Please enter your PIN: ")
+    

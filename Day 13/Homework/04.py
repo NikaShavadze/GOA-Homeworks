@@ -1,11 +1,11 @@
 """
-    Write a program that prints numbers from 1 to 10, but stops 
-if the number is 5 using a while loop and the break statement. break
+    Write a program that asks the user to enter a number between 1 and 5.
+If the numberis less than 1 or greater than 5, print "Invalid input". 
+If the number is between 1 and 5, print "Valid input".
 """
+user_input = int(input("Please enter a number\n"))
 
-i = 1
-while i <= 10:
-    print(i)
-    if i == 5:
-        break
-    i = i + 1
+if user_input > 5 or user_input < 5:
+    print("Invalid input")
+else:
+    print("Valid input")

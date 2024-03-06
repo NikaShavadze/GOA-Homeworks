@@ -1,9 +1,13 @@
 """
-Write a program that prints numbers from 1 to 10 using a while loop.
+    Write a program that asks the user to enter a number and then prints whether the
+number is positive, negative, or zero using an if-else statement.
 """
-i = 1
-while i <= 10:
-    print(i)
-    i = i + 1
-    
-    
+
+number = int(input("Please enter a nummber\n"))
+
+if number > 0:
+    print("Your number is positive.")
+elif number < 0:
+    print("Yours number is negative.")
+else:
+    print("Yours number is 0.")

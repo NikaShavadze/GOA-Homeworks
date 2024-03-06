@@ -1,18 +1,19 @@
 """
-    Write a program that simulates a basic ATM. It should ask the user for their PIN, 
-and if it's correct, display a text withdrawal, deposit, and balance.
+    Write a program that simulates a simple login system. Ask the user for
+a username and password, and if they enter "admin" and "password123", respectively, 
+print "Login successful" using if-else.
 """
 
-registered_password = "1234"
-user_input = input("Please enter your PIN: ")
+registered_login = "admin"
+registered_password = "password123"
+user_login_input = input("Login: ")
+user_password_input = input("Passwprd: ")
 
 while True:
-    if user_input == registered_password:
-        print("Withdrawal")
-        print("Deposit")
-        print("Balance")
+    if user_login_input == registered_login and user_password_input == registered_password:
+        print("Login successful.")
         break
     else:
-        print("Password incorrect.")
-        user_input = input("Please enter your PIN: ")
-    
+        print("Incorrect password.")
+        user_login_input = input("Login: ")
+        user_password_input = input("Passwprd: ")
