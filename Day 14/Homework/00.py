@@ -1,8 +1,9 @@
 """
-  Create an array which will include numbers from 0 to 20 (write it manually, 
+  Create an array which will include numbers from 0 to 20 (write it manually,
 without loops), then print whole array.
 """
-nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+        11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 print(nums)
 
@@ -12,22 +13,20 @@ nums_even = nums[::2]
 print(nums_even)
 
 
-
 """
-  Create an array, then add numbers from 50 to 100 to it. In the end, print 
+  Create an array, then add numbers from 50 to 100 to it. In the end, print
 the part of this array with negatives indexes.
 """
 nums2 = []
 for i in range(50, 101):
     nums2.append(i)
-    
+
 print(nums2[-1::-1])
 
 
-
 """
-    Ask user for two inputs and store them as variables, their type has to be int. 
-Then use for loop, use lower number from this two variables as start, Higher 
+    Ask user for two inputs and store them as variables, their type has to be int.
+Then use for loop, use lower number from this two variables as start, Higher
 number as end, you do not need step. After that, you'll have to use if statement to only print multiples of five.
 """
 
@@ -48,7 +47,6 @@ else:
         my_array.append(i)
         if i % 5 == 0:
             print(i)
-    
 
 
 """
@@ -61,4 +59,5 @@ age = int(input("Please enter your age: "))
 if age >= 18:
     name = input("Please enter you name: ")
     my_array.append(name)
-    print(my_array[0])
+    my_array.append(age)
+    print(my_array)
