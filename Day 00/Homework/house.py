@@ -1,9 +1,9 @@
-from turtle import*
+from turtle import *
 
 width(7)
 speed(1000)
 
-#house
+# house
 forward(200)
 left(90)
 forward(200)
@@ -13,7 +13,7 @@ left(90)
 forward(200)
 left(90)
 
-#door
+# door
 forward(70)
 begin_fill()
 color("brown")
@@ -25,19 +25,19 @@ right(90)
 forward(100)
 end_fill()
 
-#roof
+# roof
 penup()
 goto(200, 200)
 pendown()
+color("grey")
 begin_fill()
 right(150)
-color("grey")
 forward(200)
 left(120)
 forward(200)
 end_fill()
 
-#ground
+# ground
 # penup()
 # goto(-10000, 0)
 # pendown()
@@ -53,7 +53,7 @@ end_fill()
 # forward(10000)
 # end_fill()
 
-#Window_1
+# Window_1
 penup()
 goto(35, 130)
 pendown()
@@ -69,7 +69,7 @@ left(90)
 forward(40)
 end_fill()
 
-#window_2
+# window_2
 penup()
 goto(130, 130)
 pendown()
