@@ -3,11 +3,11 @@ surname = "Shavadze"
 age = 21
 height = 179.5
 weight = 75
-origin = "Batumi, Georgia"
+origin = "xxxxxx, xxxxxxx"
 current_city = "Tbilisi"
-university = "Caucasus University"
+university = "xxxxxxxxy"
 faculty = "computer science"
-hobby = "playing chess, playing basketball and boxing"
+hobby = "xxxxxxxxxxxxxx xxxxxxxxx xxxxxx"
 
 print("Hello. My name is " + name + " " + surname + ". I am " + str(age)
       + " years old. I am from " + origin + ". Currently I live in " + current_city
