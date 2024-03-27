@@ -1,23 +1,13 @@
 """
-მომხმარებელს შეეკითხეთ საწყისი და საბოლოო რიცხვები. ეს რიცხვები გადაეცით 
-ფუნქციას, for ციკლით სიაში შეინახეთ მათ შორის არსებული რიცხვები. შემდეგ მოახდინეთ 
-გაფილტვრა, ისევ for ციკლით განიხილეთ თითოეული რიცხვი - თუ რიცხვი ლუწი იქნება, 
-ახალ სიაში დაამატეთ მისი მეორე ხარისხი, ხოლო თუ კენტი იქნება სიაში დაამატეთ მისი 
-კვადრატული ფესვი (0.5 ხარისხი).
+შექმენით ფუნქცია, რომელსაც გადასცემთ მომხმარებლისგან 
+მიღებულ სახელსა და გვარს. შემდეგ ისინი დაამატეთ სიაში და დააბრუნეთ სია.
 """
 
 
-def my_func():
-    num1 = int(input("Please enter a staring number: "))
-    num2 = int(input("Please enter an ending number: "))
-    my_list = []
+def create_a_list():
+    name_surname = input("Enter your name and surname:\n")
+    name_surname = name_surname.split()
+    return name_surname
 
-    for i in range(num1, num2 + 1):
-        if i % 2 == 0:
-            i = i ** 2
-            my_list.append(i)
-        elif i % 2 == 1:
-            i = i ** 0, 5
-            my_list.append(i)
 
-    return my_list
+print(create_a_list())

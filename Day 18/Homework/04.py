@@ -1,21 +1,22 @@
 """
-შექმენით ფუნქცია, რომელსაც გადაეცემა რიცხვების სია. 
-თქვენ უნდა დააბრუნოთ ამ სიის საშუალო არითმეტიკული ( ჯამი / სიგრძე )
+შექმენით ფუნქცია, რომელსაც გადასცემთ მომხმარებლის გვარს.
+გვარის თითოეული ასო გადაიტანეთ ახალ სიაში. შემდეგ for ციკლის გამოყენებით
+იმუშავეთ ამ სიაზე - მარტო ლუწ ინდექსებზე მყოფი ასოები დაამატეთ ახალ სიაში.
+საბოლოოდ დააბრუნეთ ეს სია.
+
+Bonus (არაა სავალდებულო): ეს სია გარდაქმენით სთრინგად და ამ სახით დააბრუნეთ
 """
 
 
-def my_func():
-    user_input = input("Please enter numbers separated by spaces")
-    my_list = user_input.split()
-    sum = 0
+def even_indexes():
+    user_input = input("Please enter your surname: ")
+    my_list = []
 
-    for i in my_list:
-        sum = sum + int(i)
+    for index in range(len(user_input)):
+        if index % 2 == 0:
+            my_list.append(user_input[index])
 
-    average = sum / len(my_list)
-    length = len(my_list)
-
-    return average, sum, length
+    return my_list
 
 
-print(my_func())
+print(even_indexes())

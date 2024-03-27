@@ -1,17 +1,21 @@
 """
-შექმენით ფუნქცია, რომელიც მიიღებს მომხმარებლისგან სიტყვას. შემდეგ თქვენ უნდა 
-მოახდინოთ ამ სიტყვის შებრუნება, მაგ: word - drow. საბოლოდ კი დააბრუნეთ შედეგი.
+შექმენით ფუნქცია, რომელსაც გადაეცემა რიცხვების სია. 
+თქვენ უნდა დააბრუნოთ ამ სიის საშუალო არითმეტიკული ( ჯამი / სიგრძე )
 """
 
 
-def reverse():
-    user_input = input("Write something that you what to reverse: ")
-    my_list = []
+def my_func():
+    user_input = input("Please enter numbers separated by spaces")
+    my_list = user_input.split()
+    sum = 0
 
-    for index in range(len(user_input), 0, -1):
-        my_list.append(user_input[index])
+    for i in my_list:
+        sum = sum + int(i)
 
-    return my_list
+    average = sum / len(my_list)
+    length = len(my_list)
+
+    return average, sum, length
 
 
-print(reverse())
+print(my_func())
