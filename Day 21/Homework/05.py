@@ -10,9 +10,3 @@ Input: 145263 Output: 654321
 
 Input: 123456789 Output: 987654321
 """
-
-def descending_order(num):
-    num_str = str(num)
-    top = num
-    for digit in num_str:
-        
