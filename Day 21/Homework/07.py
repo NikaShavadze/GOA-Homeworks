@@ -9,9 +9,3 @@ Additionally, if the number is negative, return 0.
 
 Note: If the number is a multiple of both 3 and 5, only count it once.
 """
-
-
-result = print(2)
-
-result
-result
